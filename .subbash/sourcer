@@ -1,0 +1,17 @@
+# My bashrc sub source script
+# based on https://notabug.org/demure/dotfiles/
+# vim:set syntax=sh:
+
+so() { [ -s $1 ] && source $1; }
+
+so $HOME/.subbash/export
+so $HOME/.subbash/shopt
+
+if [[ $- == *i* ]]; then
+    so $HOME/.subbash/alias
+    so $HOME/.subbash/prompt
+fi
+
+so $HOME/.subbash/settings
+
+return 0

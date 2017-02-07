@@ -1,0 +1,7 @@
+# My bashrc sub prompt script
+# based on https://notabug.org/demure/dotfiles/
+# vim:set syntax=bash:
+
+shopt -s histappend
+shopt -s checkwinsize
+shopt -s autocd
