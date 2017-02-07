@@ -1,3 +1,4 @@
+# Ignore everything except specific stuff for my .bashrc
 *
 !.gitignore
 !README.md
