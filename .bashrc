@@ -2,4 +2,4 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-source $HOME/.subbash/sourcer
+source $HOME/.subbash/sourcerer
