@@ -10,4 +10,4 @@ export HISTSIZE=100000                  ## Size of shells hist
 export HISTFILESIZE=100000              ## Size of Hist file
 export HISTCONTROL=ignoreboth
 
-export PATH=$PATH:$HOME/tools/er+xssh/bin:$HOME/bin:$HOME/bin/terraform:$HOME/Android/Sdk/platform-tools
+export PATH=$PATH:$HOME/bin:$HOME/bin/er+xssh/bin:$HOME/bin/terraform:$HOME/Android/Sdk/platform-tools
