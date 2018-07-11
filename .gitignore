@@ -5,3 +5,6 @@
 !.bashrc
 !.subbash
 !.subbash/*
+!.vim
+!.vim/*
+!.vimrc
