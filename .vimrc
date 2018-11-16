@@ -1,4 +1,9 @@
+" set terminal to 256 colors
 set t_Co=256
+set t_BE=
+
+" enable line numbers
+set nu
 
 " use elflord colors
 colo elflord
@@ -51,9 +56,15 @@ let g:airline_theme = 'bubblegum'
 
 " NERDTree configs
 map <C-n> :NERDTreeToggle<CR>
-autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+"autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 syntax enable
+
+" default tab behavior
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
 
 set encoding=utf-8
 
@@ -64,11 +75,10 @@ set foldnestmax=1
 " Enable folding with the spacebar
 nnoremap <space> za
 
-au BufNewFile,BufRead *.py
+au BufNewFile,BufRead *.py,*.sh
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
-    \ set textwidth=79 |
     \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix
