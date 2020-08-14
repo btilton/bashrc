@@ -3,7 +3,11 @@
 # The name "sourcerer" is thanks to Josh Gies
 # vim:set syntax=sh:
 
-so() { [ -s $1 ] && source $1; }
+so() {
+    if [ -s $1 ]; then
+        source $1
+    fi
+}
 
 so $HOME/.subbash/export
 so $HOME/.subbash/shopt
@@ -11,6 +15,7 @@ so $HOME/.subbash/shopt
 if [[ $- == *i* ]]; then
     so $HOME/.subbash/alias
     so $HOME/.subbash/prompt
+    so $HOME/.subbash/ssh
 fi
 
 so $HOME/.subbash/settings
