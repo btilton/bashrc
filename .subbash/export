@@ -5,9 +5,14 @@
 export CLICOLOR="YES"       ## Color 'ls', etc.
 export EDITOR=vim           ## Set default editor
 
+export LC_ALL=en_US
+
 ### History Settings ### {{{
 export HISTSIZE=100000                  ## Size of shells hist
 export HISTFILESIZE=100000              ## Size of Hist file
 export HISTCONTROL=ignoreboth
 
-export PATH=$PATH:$HOME/bin:$HOME/bin/er+xssh/bin:$HOME/bin/terraform:$HOME/Android/Sdk/platform-tools
+export GOPATH=$(go env GOPATH)
+export GO111MODULE=on
+
+export PATH=$PATH:$HOME/bin:$HOME/bin/er+xssh/bin:$HOME/bin/terraform:$HOME/Android/Sdk/platform-tools:$GOPATH/bin

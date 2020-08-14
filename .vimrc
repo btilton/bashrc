@@ -28,6 +28,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/indentpython.vim'
+Plugin 'ConradIrwin/vim-bracketed-paste'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -60,6 +61,8 @@ map <C-n> :NERDTreeToggle<CR>
 
 syntax enable
 
+set mouse=a
+
 " default tab behavior
 set tabstop=4
 set softtabstop=4
@@ -69,11 +72,11 @@ set expandtab
 set encoding=utf-8
 
 " Enable folding
-set foldmethod=indent
-set foldnestmax=1
+" set foldmethod=indent
+" set foldnestmax=1
 
 " Enable folding with the spacebar
-nnoremap <space> za
+" nnoremap <space> za
 
 au BufNewFile,BufRead *.py,*.sh
     \ set tabstop=4 |
